@@ -7,51 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="responsive.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>src = server.js</script>
-    <script>
-
-        const PORT = process.env.PORT || 3000;
-        app.listen(PORT);
-        
-        $("form").on("submit", e => {
-        e.preventDefault();
-
-          var email = document.getElementById("email").value;
-          var subject = document.getElementById("subject").value;
-          var text = document.getElementById("text").value;
-        });
-
-        require('dotenv').config();
-
-        const nodemailer = require('nodemailer');
-        const log = console.log;
-
-        // Step 1
-        let transporter = nodemailer.createTransport({
-            service: 'gmail',
-            auth: {
-                user: process.env.EMAIL ,
-                pass: process.env.PASSWORD 
-            }
-        });
-
-        // Step 2
-        let mailOptions = {
-            from: email,
-            to: process.env.EMAIL, 
-            subject,
-            text
-        };
-
-        // Step 3
-        transporter.sendMail(mailOptions, (err, data) => {
-            if (err) {
-                return log('Error occurs');
-            }
-            return log('Email sent!!!');
-        });
-
-    </script>
+    
 
 </head>
 <body>
