@@ -1,0 +1,29 @@
+@media screen and (max-width:425px){
+    .navigation_bar{
+        padding: 0;
+        margin: 0;
+        height: 10vh;
+        width: 100%;
+        background-image: url("plain.jpg");
+        line-height: 10vh;
+        display: block;
+        position: relative;
+        top: 0px;
+        z-index: 1;
+        text-align: center;
+    }
+
+    .navigation_bar a{
+        text-decoration: none;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 22px;
+        color: white;
+    }
+
+    .navigation_bar i{
+        margin-right: 1px;
+    }
+    
+    
+}

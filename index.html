@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pamela</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>src = server.js</script>
+    <script>
+
+        const PORT = process.env.PORT || 3000;
+        app.listen(PORT);
+        
+        $("form").on("submit", e => {
+        e.preventDefault();
+
+          var email = document.getElementById("email").value;
+          var subject = document.getElementById("subject").value;
+          var text = document.getElementById("text").value;
+        });
+
+        require('dotenv').config();
+
+        const nodemailer = require('nodemailer');
+        const log = console.log;
+
+        // Step 1
+        let transporter = nodemailer.createTransport({
+            service: 'gmail',
+            auth: {
+                user: process.env.EMAIL ,
+                pass: process.env.PASSWORD 
+            }
+        });
+
+        // Step 2
+        let mailOptions = {
+            from: email,
+            to: process.env.EMAIL, 
+            subject,
+            text
+        };
+
+        // Step 3
+        transporter.sendMail(mailOptions, (err, data) => {
+            if (err) {
+                return log('Error occurs');
+            }
+            return log('Email sent!!!');
+        });
+
+    </script>
+
+</head>
+<body>
+
+   
+    <div class="navigation_bar">
+         <a href="#home"><i class="fas fa-home"></i>Home</a>
+         <a href="#about"><i class="fas fa-user" ></i>About Me</a>
+         <a href="#skills"><i class="fas fa-palette"></i>My Skills</a>
+         <a href="#interests"><i class="fas fa-laptop-code"></i>My Intrests</a>
+         <a href="#contact"><i class="fas fa-address-book"></i>Contact Me</a>
+    </div>
+    <!--This is the start of the home page-->
+    <div id="home-page">
+        <div id="home">
+            <div id="left">
+                <div id="image-holder">
+                    <img src="pam.jpg">
+                </div>
+            </div>
+
+            <div id="right">
+                <div id="more">
+                    <h3>Hi, my name is Pamela Lotriet</h3>
+                    <p>I am 21 years old and a third year BSc Information technology student, studying at the North-West University. I have a great passion for information technology and enjoy learning about new technologies.</p>
+                    <p>I believe that everyone should learn to understand machine language, as technology has already began taking over day to day tasks and will continue to take over more tasks in the future.</p>
+                    <p>Although many people may differ in opinions, I also believe that someday in the near future machines and technology will have taken over almost all day to day activities. This will leave humans to create more inteligent machines and technologies and maintaining the already existing ones.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--This is the end of the home page-->
+
+    <!--This is the start of the heading for scrolling-->
+    <div class="heading">
+        <h3 id="about">About me</h3>
+    </div>
+    <!--This is the end of the heading for scrolling-->
+
+    <!--This is the start of the about me page-->
+    <div id="about-page">
+        <p id="first">I am an information Technology student, currently studying at the North West University, on the Potchefstroom campus. I am very passionate about computers and enjoy finding new and creative ways to use them.</p>
+        <p>Although I am still a student, I enjoy learning new things outside of my study field and curriculum and do so quite quickly once I put my mind to it. I am good at solving problems and finding alternative ways to do things should plan A fail to work properly. With that said I am mostly interested in software and database design but will be happy doing anything in the technological field. </p>
+        <p>I am a quiet and focused person who can work swiftly and effectively either alone or as part of a team and I always ensure that the work I do is of the highest standards. I enjoy working hard and quickly and will always finish any give task or assignment as quickly, efficiently and thorough as possible. I am very organized and enjoy working in a neat and tidy work environment with friendly, open minded people. In my free time I enjoy playing games, going to the gym, learning new things, reading or simply being outside connecting with nature.</p>
+        <p>I believe that in the workplace all employees cannot give a 100%, a 100% of the time and sometimes you have to give a 120% to help any given co-worker should they be having a difficult day. I also believe that all people should be treated equally and with the same amount of respect regardless of the position they fill in the workplace.</p>
+    </div>
+    <!--This is the end of the about me page-->
+
+    <!--This is the start of the heading for scrolling-->
+    <div class="heading">
+        <h3 id="skills">My Skills</h3>
+    </div>
+    <!--This is the end of the heading for scrolling-->
+
+    <!--This is the start of the skills page-->
+    <div id="skills-page">
+        <div id="skill-card">
+            <div class="card">
+                <div class="preview">
+                    <img src="python.png">
+                </div>
+
+                <div class="experience">
+                    <p>HTML</p>
+                    <progress id="file" value="75" max="100"> 32% </progress>
+                    <p>CSS</p>
+                    <progress id="file" value="60" max="100"> 32% </progress>
+                    <p>Javascript</p>
+                    <progress id="file" value="30" max="100"> 32% </progress>
+                    <p>Responsive</p>
+                    <progress id="file" value="40" max="100"> 32% </progress>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="preview">
+                    <img src="java.png">
+                </div>
+
+                <div class="experience">
+                    <p>HTML</p>
+                    <progress id="file" value="75" max="100"> 32% </progress>
+                    <p>CSS</p>
+                    <progress id="file" value="60" max="100"> 32% </progress>
+                    <p>Javascript</p>
+                    <progress id="file" value="30" max="100"> 32% </progress>
+                    <p>Responsive</p>
+                    <progress id="file" value="40" max="100"> 32% </progress>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="preview">
+                    <img src="sql.jpeg">
+                </div>
+
+                <div class="experience">
+                    <p>HTML</p>
+                    <progress id="file" value="75" max="100"> 32% </progress>
+                    <p>CSS</p>
+                    <progress id="file" value="60" max="100"> 32% </progress>
+                    <p>Javascript</p>
+                    <progress id="file" value="30" max="100"> 32% </progress>
+                    <p>Responsive</p>
+                    <progress id="file" value="40" max="100"> 32% </progress>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="preview">
+                    <img src="c.jpg">
+                </div>
+
+                <div class="experience">
+                    <p>HTML</p>
+                    <progress id="file" value="75" max="100"> 32% </progress>
+                    <p>CSS</p>
+                    <progress id="file" value="60" max="100"> 32% </progress>
+                    <p>Javascript</p>
+                    <progress id="file" value="30" max="100"> 32% </progress>
+                    <p>Responsive</p>
+                    <progress id="file" value="40" max="100"> 32% </progress>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="preview">
+                    <img src="web.png">
+                </div>
+
+                <div class="experience">
+                    <p>HTML</p>
+                    <progress id="file" value="75" max="100"> 32% </progress>
+                    <p>CSS</p>
+                    <progress id="file" value="60" max="100"> 32% </progress>
+                    <p>Javascript</p>
+                    <progress id="file" value="30" max="100"> 32% </progress>
+                    <p>Responsive</p>
+                    <progress id="file" value="40" max="100"> 32% </progress>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--This is the start of the skills page-->
+
+    <div class="heading">
+        <h3 id="interests">My Interests</h3>
+    </div>
+    <div id="interests-page">
+    </div>
+
+    <div class="heading">
+        <h3 id="contact">Contact Me</h3>
+    </div>
+    <!--This is the start of the contact me page-->
+    <div id="contact-page">
+            <h3>Contact me on these platforms</h3>
+        <div id="social">
+            <i class="fab fa-facebook-messenger" id="facebook"></i>
+            <i class="fab fa-instagram" id="instagram"></i>
+            <i class="fab fa-telegram" id="telegram"></i>
+            <i class="fas fa-envelope-open-text" id="mail"></i>
+        </div>
+        <div id="email-address">
+            <i class="far fa-envelope"> pamela.lotriet@gmail.com</i>
+        </div>
+
+        <div id="contactEmail">
+            <form>
+                <input type="text" id="subject" placeholder="Subject" /> <br />
+                <input type="email" id="email" placeholder="Receiver email" /> <br />
+                <textarea name="text" id="text" cols="30" rows="10"></textarea> <br />
+                <input type="submit" value="Submit" />
+              </form>
+        </div>
+    </div>
+
+</body>
+</html>
