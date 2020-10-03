@@ -305,10 +305,28 @@ body{
 
 
 #interests-page{
+    
+    display: flex;
+}
+
+#articles{
     color: white;
     justify-content: center;
     align-content: center;
     padding: 15px;
     font-size: 15px;
     text-align: center;
+    width: 50%;
+    height: 100%;
+}
+
+#pictures{
+    color: white;
+    justify-content: center;
+    align-content: center;
+    padding: 15px;
+    font-size: 15px;
+    text-align: center;
+    width: 50%;
+    height: 100%;
 }
