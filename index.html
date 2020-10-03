@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>src = server.js</script>
     <script> src = "https://code.jquery.com/jquery-3.5.1.js"</script>
-    
+   
 
     <script>
             var loader;
@@ -24,6 +24,32 @@
                 loader = document.getElementById('loader');
                 loader.style.display = "block";
             });
+
+    </script>
+
+    <script>
+        //const fetch = require('node-fetch');
+
+        fetch('https://api.currentsapi.services/v1/search?keywords=programming&language=en&apiKey=SQn03--gxRLHAcnMZmhhKWO4TTM4cDZt8nDPLw0s3Li9IZnJ')
+        .then((res)=> res.json())
+        .then((data)=> {
+            console.log(data);
+            console.log(data.news[0].title);
+
+            let news = ''
+
+            for(let i =0; i<10;i++)
+            {
+                news+=
+                `
+                    <div class = 'spacing'>
+                        <a href"${data.news[i].url}" target = "blank">${data.news[i].title} </a>
+                    </div>
+                `;
+            }
+
+            document.getElementById('interests-page').innerHTML = news;
+        });
 
     </script>
 
@@ -44,7 +70,7 @@
             <a href="#interests"><i class="fas fa-laptop-code"></i>My Intrests</a>
             <a href="#contact"><i class="fas fa-address-book"></i>Contact Me</a>
         </div>
-        <!--https://pamlotriet.github.io/cv/-->
+        <!--https://pamlotriet.github.io/cv/ -->
         <!--This is the start of the home page-->
         <div id="home-page">
             <div id="home">
