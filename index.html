@@ -42,13 +42,12 @@
                     console.log(data.news[i].title);
                     news+=
                     `
-                            <h1>Some Interesting Articles to read</h1>
                             <br>
                             <a href = "${data.news[i].url}" target = "blank">${data.news[i].title} > <br>
                     `;
                 }
 
-                document.getElementById('articles').innerHTML = news;
+                document.getElementById('article-links').innerHTML = news;
             });
 
         
@@ -212,7 +211,10 @@
 
         <div id="interests-page">
             <div id="articles">
-                
+                <h1>Some Interesting Articles to read</h1>
+                <div id="article-links">
+
+                </div>
             </div>
 
             <div id="pictures">
