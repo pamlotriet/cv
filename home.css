@@ -1,210 +1,304 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Pamela</title>
-    <link rel="stylesheet" href="home.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="responsive.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>src = server.js</script>
-    <script> src = "ttps://code.jquery.com/jquery-3.5.1.js"</script>
-    <script>src = "app.js" </script>
+body{
+    margin: 0;
+    padding: 0;
+}
 
-    <script>
-            var loader;
+.navigation_bar{
+    padding: 0;
+    margin: 0;
+    height: 10vh;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(brick-wallpaper-dark-background.jpg);
+    line-height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
 
-            function loading()
-            {
-                loader.style.display = 'none';
-                document.getElementById('content').style.display = 'block';
-            }
+.navigation_bar h1{
+    padding: 0;
+    margin: 0;
+}
 
-            document.addEventListener("DOMContentLoaded", function(){
-                loader = document.getElementById('loader');
-                loader.style.display = "block";
-            });
+.navigation_bar a{
+    text-decoration: none;
+    padding: 0;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+}
 
-    </script>
+.navigation_bar i{
+    margin-right: 5px;
+}
 
-</head>
-<body onload = "loading()">
+.navigation_bar a:hover{
+   color: lime;
+}
 
-    <div >
-        
-    </div>
+#home-page{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
 
-    <div id="loader"></div>
+#home{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background-image: url('home.png');
+    background-size: cover;
+    height: 100vh;
+    color: azure;
+  
+}
+
+#left{
+    height: 90vh;
+    width: 40%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#image-holder{
+    width: 90%;
+    height: 70vh;
+    border: 3px groove darkkhaki;
+    position: relative;
+    top: 20vh;
+}
+
+#image-holder img{
+    width: 100%;
+    height: 100%;
+}
+
+#right{
+    height: 90vh;
+    width: 60%;
+    padding: 0;
+    margin: 0;
+}
+
+#right h3{
+    text-align: center;
+}
+
+#more{
+    position: relative;
+    top: 30vh;
+}
+
+#right h3{
+    font-size: 24px;
+    margin: 0;
+    padding: 10px;
+}
+
+#right p{
+    font-size: 15px;
+    padding: 10px;
+    text-align: left;
+}
+
+.heading{
+    height: 5vh;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 5vh;
+    padding: 5px;
+    background-color: black;
+    color: aliceblue;
+    padding: 0;
+    margin: 0;
+
+}
+
+.heading h3{
+    padding: 0;
+    margin: 0;
+}
+
+#about-page{
+    padding-top: 40px;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url(brick-wallpaper-dark-background.jpg);
+    background-size: cover;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+#about-page p{
+    padding: 15px;
+    margin: 0;
+    position: relative;
+    top: 13%;
+    width: 70%;
+    left: 15%;
+    color: whitesmoke;
+}
+
+
+#skills-page{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url(unnamed.jpg);
+}
+
+#skill-card{
+    width: 100%;
+    height: 70vh;
+    background-image: url(unnamed.jpg);
+    background-size: cover;
+    position: relative;
+    top: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    width: 19%;
+    height: 87%;
+    background-image: url(pexels-photo-952670.jpeg);
+    background-size: contain;
+    margin: 0;
+    position: relative;
+    top: 28px;
+    border: 2px outset lightblue;
+}
+
+.preview{
+    width: 90%;
+    height: 40%;
+    background-color: azure;
+    margin: 12px;
+    border: 2px outset lightblue;
+}
+
+.preview img{
+    width: 100%;
+    height: 100%;
+}
+
+.experience{
+    width: 90%;
+    height: 50%;
+    background-color: rgba(255, 225, 255, 0.2);
+    margin: 12px;
+    text-align: center;
+    padding: 0;
+    border: inset 2px lightblue;
+}
+
+.experience p{
+    padding-top: 5px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.experience progress{
+    padding: 2px;
+}
+
+#file{
+    padding: 12px;
+    width: 80%;
+}
+
+#interests-page{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-image: url(brick-wallpaper-dark-background.jpg);
+    width: 100%;
+    background-color: darkgoldenrod;
+}
+
+#more-about-page{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: darkgreen;
+}
+
+#contact-page{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+}
+
+#contact-page h3{
+    margin: 0;
+    padding: 8%;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color:gold;
+}
+
+#social{
+    font-size: 60px;
+    text-align: center;
+    padding: 20px;
+    color: aliceblue;
+}
+
+#social i{
+    padding: 15px;;
+}
+
+#facebook:hover{
+    color: dodgerblue;
+}
+
+#instagram:hover{
+    color: orange;
+}
+
+#telegram:hover{
+    color:grey;
+}
+
+#mail:hover{
+    color:red;
+}
+
+#email-address{
+    color: white;
+    text-align: center;
+    padding: 40px;
     
+}
 
-        <div class="navigation_bar">
-            <a href="#home"><i class="fas fa-home"></i>Home</a>
-            <a href="#about"><i class="fas fa-user" ></i>About Me</a>
-            <a href="#skills"><i class="fas fa-palette"></i>My Skills</a>
-            <a href="#interests"><i class="fas fa-laptop-code"></i>My Intrests</a>
-            <a href="#contact"><i class="fas fa-address-book"></i>Contact Me</a>
-        </div>
-        <!--https://pamlotriet.github.io/cv/-->
-        <!--This is the start of the home page-->
-        <div id="home-page">
-            <div id="home">
-                <div id="left">
-                    <div id="image-holder">
-                        <img src="pam.jpg">
-                    </div>
-                </div>
+#email-address i{
+    font-size: 60px;
+}
 
-                <div id="right">
-                    <div id="more">
-                        <h3>Hi, my name is Pamela Lotriet</h3>
-                        <p>I am 21 years old and a third year BSc Information technology student, studying at the North-West University. I have a great passion for information technology and enjoy learning about new technologies.</p>
-                        <p>I believe that everyone should learn to understand machine language, as technology has already began taking over day to day tasks and will continue to take over more tasks in the future.</p>
-                        <p>Although many people may differ in opinions, I also believe that someday in the near future machines and technology will have taken over almost all day to day activities. This will leave humans to create more inteligent machines and technologies and maintaining the already existing ones.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--This is the end of the home page-->
+#email-address p{
+    padding: 15px;
+    font-size: 15px;
+}
 
-        <!--This is the start of the heading for scrolling-->
-        <div class="heading">
-            <h3 id="about">About me</h3>
-        </div>
-        <!--This is the end of the heading for scrolling-->
-
-        <!--This is the start of the about me page-->
-        <div id="about-page">
-            <p id="first">I am an information Technology student, currently studying at the North West University, on the Potchefstroom campus. I am very passionate about computers and enjoy finding new and creative ways to use them.</p>
-            <p>Although I am still a student, I enjoy learning new things outside of my study field and curriculum and do so quite quickly once I put my mind to it. I am good at solving problems and finding alternative ways to do things should plan A fail to work properly. With that said I am mostly interested in software and database design but will be happy doing anything in the technological field. </p>
-            <p>I am a quiet and focused person who can work swiftly and effectively either alone or as part of a team and I always ensure that the work I do is of the highest standards. I enjoy working hard and quickly and will always finish any give task or assignment as quickly, efficiently and thorough as possible. I am very organized and enjoy working in a neat and tidy work environment with friendly, open minded people. In my free time I enjoy playing games, going to the gym, learning new things, reading or simply being outside connecting with nature.</p>
-            <p>I believe that in the workplace all employees cannot give a 100%, a 100% of the time and sometimes you have to give a 120% to help any given co-worker should they be having a difficult day. I also believe that all people should be treated equally and with the same amount of respect regardless of the position they fill in the workplace.</p>
-        </div>
-        <!--This is the end of the about me page-->
-
-        <!--This is the start of the heading for scrolling-->
-        <div class="heading">
-            <h3 id="skills">My Skills</h3>
-        </div>
-        <!--This is the end of the heading for scrolling-->
-
-        <!--This is the start of the skills page-->
-        <div id="skills-page">
-            <div id="skill-card">
-                <div class="card">
-                    <div class="preview">
-                        <img src="python.png">
-                    </div>
-
-                    <div class="experience">
-                        <p>HTML</p>
-                        <progress id="file" value="75" max="100"> 32% </progress>
-                        <p>CSS</p>
-                        <progress id="file" value="60" max="100"> 32% </progress>
-                        <p>Javascript</p>
-                        <progress id="file" value="30" max="100"> 32% </progress>
-                        <p>Responsive</p>
-                        <progress id="file" value="40" max="100"> 32% </progress>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="preview">
-                        <img src="java.png">
-                    </div>
-
-                    <div class="experience">
-                        <p>HTML</p>
-                        <progress id="file" value="75" max="100"> 32% </progress>
-                        <p>CSS</p>
-                        <progress id="file" value="60" max="100"> 32% </progress>
-                        <p>Javascript</p>
-                        <progress id="file" value="30" max="100"> 32% </progress>
-                        <p>Responsive</p>
-                        <progress id="file" value="40" max="100"> 32% </progress>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="preview">
-                        <img src="sql.jpeg">
-                    </div>
-
-                    <div class="experience">
-                        <p>HTML</p>
-                        <progress id="file" value="75" max="100"> 32% </progress>
-                        <p>CSS</p>
-                        <progress id="file" value="60" max="100"> 32% </progress>
-                        <p>Javascript</p>
-                        <progress id="file" value="30" max="100"> 32% </progress>
-                        <p>Responsive</p>
-                        <progress id="file" value="40" max="100"> 32% </progress>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="preview">
-                        <img src="c.jpg">
-                    </div>
-
-                    <div class="experience">
-                        <p>HTML</p>
-                        <progress id="file" value="75" max="100"> 32% </progress>
-                        <p>CSS</p>
-                        <progress id="file" value="60" max="100"> 32% </progress>
-                        <p>Javascript</p>
-                        <progress id="file" value="30" max="100"> 32% </progress>
-                        <p>Responsive</p>
-                        <progress id="file" value="40" max="100"> 32% </progress>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="preview">
-                        <img src="web.png">
-                    </div>
-
-                    <div class="experience">
-                        <p>HTML</p>
-                        <progress id="file" value="75" max="100"> 32% </progress>
-                        <p>CSS</p>
-                        <progress id="file" value="60" max="100"> 32% </progress>
-                        <p>Javascript</p>
-                        <progress id="file" value="30" max="100"> 32% </progress>
-                        <p>Responsive</p>
-                        <progress id="file" value="40" max="100"> 32% </progress>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--This is the start of the skills page-->
-
-        <div class="heading">
-            <h3 id="interests">My Interests</h3>
-        </div>
-        
-        <div id="interests-page">
-
-        </div>
-
-        <div class="heading">
-            <h3 id="contact">Contact Me</h3>
-        </div>
-        <!--This is the start of the contact me page-->
-        <div id="contact-page">
-                <h3>Contact me on these platforms</h3>
-            <div id="social">
-                <i class="fab fa-facebook-messenger" id="facebook"></i>
-                <i class="fab fa-instagram" id="instagram"></i>
-                <i class="fab fa-telegram" id="telegram"></i>
-                <i class="fas fa-envelope-open-text" id="mail"></i>
-            </div>
-            <div id="email-address">
-                <i class="far fa-envelope"> pamela.lotriet@gmail.com</i>
-            </div>
-
-        
-        </div>
-    
-
-</body>
-</html>
+#loader{
+   
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 50;
+    background: #000 url("loader.gif") no-repeat center center;
+}
