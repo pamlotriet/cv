@@ -8,42 +8,34 @@
     <link rel="stylesheet" href="responsive.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>src = server.js</script>
+    <script> src = "https://code.jquery.com/jquery-3.5.1.js"</script>
+    <script>src = "app.js" </script>
 
-    <script >
-        var loader;
+    <script>
+            var loader;
 
-        function loadNow(opacity)
-        {
-            if(opacity <=0)
+            function loading()
             {
-                displayContent();
+                loader.style.display = 'none';
+                document.getElementById('content').style.display = 'block';
             }
-            else 
-            {
-                loader.style.opacity = opacity;
-                window.setTimeout(function(){
-                    loadNow(opacity - 0.05);
-                },100);
-            }
-        }
 
-        function displayContent()
-        {
-            loader.style.display = 'none';
-            document.getElementById('content').style.display = 'block';
-        }
+            document.addEventListener("DOMContentLoaded", function(){
+                loader = document.getElementById('loader');
+                loader.style.display = "block";
+            });
 
-        document.addEventListener("DOMContentLoaded", function(){
-            loader = document.getElementById('loader');
-            loadNow(2);
-        })
     </script>
 
 </head>
-<body>
+<body onload = "loading()">
+
+    <div >
+        
+    </div>
 
     <div id="loader"></div>
-    <div id="content">
+    
 
         <div class="navigation_bar">
             <a href="#home"><i class="fas fa-home"></i>Home</a>
@@ -52,6 +44,7 @@
             <a href="#interests"><i class="fas fa-laptop-code"></i>My Intrests</a>
             <a href="#contact"><i class="fas fa-address-book"></i>Contact Me</a>
         </div>
+        <!--https://pamlotriet.github.io/cv/-->
         <!--This is the start of the home page-->
         <div id="home-page">
             <div id="home">
@@ -188,7 +181,9 @@
         <div class="heading">
             <h3 id="interests">My Interests</h3>
         </div>
+
         <div id="interests-page">
+
         </div>
 
         <div class="heading">
@@ -209,7 +204,7 @@
 
         
         </div>
-    </div>
+    
 
 </body>
 </html>
