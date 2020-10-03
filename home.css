@@ -302,3 +302,13 @@ body{
     z-index: 50;
     background: #000 url("loader.gif") no-repeat center center;
 }
+
+
+#interests-page{
+    color: white;
+    justify-content: center;
+    align-content: center;
+    padding: 15px;
+    font-size: 15px;
+    text-align: center;
+}
