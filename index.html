@@ -34,15 +34,16 @@
                 //console.log(data);
                 console.log(data.news[0].title);
 
-                let news = ''
+                let news = '<br> <h1 style ="color: cornflowerblue; font-size:32px;">Some Interesting Articles to read</h1>'
 
                 for(let i =0; i<8;i++)
                 {
                     console.log(data.news[i].title);
                     news+=
                     `
+                            
                             <br>
-                            <a href = "${data.news[i].url}" target = "blank" style ="color: white; font-size: 18px; text-align: center; justify-content: center; align-content: center; left:50%;" >${data.news[i].title} > <br>
+                            <a href = "${data.news[i].url}" target = "blank" style ="color: #ECF0F1 ; font-size: 18px;  " >${data.news[i].title} > <br>
                     `;
                 }
 
@@ -52,7 +53,8 @@
 
     <script>
 
-         //var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+
+             //var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
             //create a request variable
             var request = new XMLHttpRequest();
 
@@ -68,13 +70,14 @@
                 console.log(data);
 
                 var statusHTML = '';
-
+                
                 $.each(data, function(i,status){
+                    
                     statusHTML += '<tr>';
-                    statusHTML += '<td style = "background: white;color:black;">'+ status.id + '</td>'    
-                    statusHTML += '<td style = "background: white;color:black;>'+ status.name + '</td>' 
-                    statusHTML += '<td style = "background: white;color:black;>'+ status.html_url + '</td>' 
-                    statusHTML += '<td style = "background: white;color:black;>'+ status.language + '</td>' 
+                    statusHTML += '<td style = "color: black;background-color:white;font-size:16px;padding: 5px;">'+ status.id + '</td>'    
+                    statusHTML += '<td style = "color: black;background-color:white;font-size:16px;padding: 5px;">'+ status.name + '</td>' 
+                    statusHTML += '<td style = "color: black;background-color:white;font-size:16px;padding: 5px;">'+ status.html_url  + '</td>' 
+                    statusHTML += '<td style = "color: black;background-color:white;font-size:16px;padding: 5px;">'+ status.language + '</td>' 
                     statusHTML += '</tr>';
                 });
 
@@ -241,32 +244,52 @@
         <!--This is the start of the skills page-->
 
         <div class="heading">
-            <h3 id="interests">My Interests</h3>
+            
         </div>
 
         <div id="interests-page">
             <div id="articles">
-                <h1>Some Interesting Articles to read</h1>
+                
                 <div id="article-links">
-
+                   
                 </div>
             </div>
 
-            <div id="pictures">
-                    <table id="table-repo">
-                        <thead>
-                           
-                            <tr id="table-repositories">
-                                <th scope="col">ID</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">URL</th>
-                                <th scope="col">Language</th>
-                            </tr>
-                        </thead>
-                        <tbody id="body">
-                           
-                        </tbody>
-                    </table>
+            <div id="myInterests">
+                <br>
+                <h3 id="interests" style="color:cornflowerblue; font-size:32px; padding:5px">My Hobbies and Interests</h3>
+                <br>
+                   <p>Gaming: I enjoy playing video games in my free time</p>
+                   <p>Reading books and articles</p>
+                   <p>Designing and creating web applications</p>
+                   <p>Designing Databases</p>
+                   <p>Improving my code writing skills</p>
+                   <p>Taking long walks outside</p>
+                   <p>Teaching people on subjects they have little knowledge about</p>
+                   <p>Playing logical games such as chess</p>
+                   <p>Learning new technologies and frameworks</p>
+                   <p>Watching tech videos</p>
+            </div>
+        </div>
+
+        <div id="git-div">
+            <h1 id="repos">My Github Repositories</h1>
+            <div id="gitrepos">
+                
+                <table id="table-repo">
+                    <thead>
+                    
+                        <tr id="table-repositories" >
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">URL</th>
+                            <th scope="col">Language</th>
+                        </tr>
+                    </thead>
+                    <tbody id="body">
+                    
+                    </tbody>
+                </table>
             </div>
         </div>
 
