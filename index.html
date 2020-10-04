@@ -49,7 +49,43 @@
                 document.getElementById('article-links').innerHTML = news;
             });
 
+            https://api.github.com
+
+    </script>
+
         
+    <script>
+        //var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+        //create a request variable
+        var request = new XMLHttpRequest();
+
+        ///open a new connection using a GET request
+
+        request.open('GET','https://api.github.com/users/pamlotriet/repos',true);
+
+        request.onload = function()
+        {
+            //get JSON data
+            var data = JSON.parse(this.response);
+
+            console.log(data);
+
+            var statusHTML = '';
+
+            $.each(data, function(i,status){
+                statusHTML += '<tr>';
+                statusHTML += '<td>'+ status.id + '</td>'    
+                statusHTML += '<td>'+ status.name + '</td>' 
+                statusHTML += '<td>'+ status.html_url + '</td>' 
+                statusHTML += '<td>'+ status.language + '</td>' 
+                statusHTML += '</tr>';
+            });
+
+            $('tbody').html(statusHTML);
+        }
+
+        //send request
+        request.send();
 
     </script>
 
@@ -217,7 +253,19 @@
             </div>
 
             <div id="pictures">
-
+                    <table class="table-repo">
+                        <thead>
+                            <tr class="table-repositories">
+                                <th scope="col">ID</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">URL</th>
+                                <th scope="col">Language</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                           
+                        </tbody>
+                    </table>
             </div>
         </div>
 
