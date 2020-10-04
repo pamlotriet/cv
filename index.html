@@ -70,7 +70,7 @@
                 var statusHTML = '';
 
                 $.each(data, function(i,status){
-                    statusHTML += '<tr>';
+                    statusHTML += '<tr style = "nth-child(even){background-color: #f2f2f2;}">';
                     statusHTML += '<td>'+ status.id + '</td>'    
                     statusHTML += '<td>'+ status.name + '</td>' 
                     statusHTML += '<td>'+ status.html_url + '</td>' 
@@ -255,6 +255,7 @@
             <div id="pictures">
                     <table id="table-repo">
                         <thead>
+                           
                             <tr id="table-repositories">
                                 <th scope="col">ID</th>
                                 <th scope="col">Name</th>
