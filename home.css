@@ -384,3 +384,20 @@ body{
     width: 50%;
     height: 50vh;
 }
+
+/*============================================================================*/
+@media screen and (max-width:375px)
+{
+    .navigation_bar{
+        display: none;
+    }
+
+  
+    #home{
+        display: block;
+        text-align: center;
+    }
+
+    
+    
+}
