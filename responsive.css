@@ -25,6 +25,7 @@
         height: 60vh; 
         padding: 0;
         margin: 0; 
+        align-content: center;
         text-align: center;
         position: relative;
     }
