@@ -27,7 +27,7 @@ body{
     text-decoration: none;
     padding: 0;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
     color: white;
 }
 
@@ -220,10 +220,11 @@ body{
 #interests-page{
     padding: 0;
     margin: 0;
-    height: 100vh;
+    height: 120vh;
     background-image: url(brick-wallpaper-dark-background.jpg);
     width: 100%;
     background-color: darkgoldenrod;
+    display: flex;
 }
 
 #more-about-page{
@@ -278,24 +279,8 @@ body{
     color:red;
 }
 
-#email-address{
-    color: white;
-    text-align: center;
-    padding: 40px;
-    
-}
-
-#email-address i{
-    font-size: 60px;
-}
-
-#email-address p{
-    padding: 15px;
-    font-size: 15px;
-}
 
 #loader{
-   
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -303,17 +288,12 @@ body{
     background: #000 url("loader.gif") no-repeat center center;
 }
 
-
-#interests-page{
-    
-    display: flex;
-}
-
 #articles{
     color: white;
     justify-content: center;
     align-content: center;
     padding: 0;
+    margin: 0;
     font-size: 15px;
     text-align: center;
     width: 50%;
@@ -343,6 +323,7 @@ body{
     width: 50%;
     height: 100vh;
     display: block;
+    font-size: 16px;
     
 }
 
@@ -362,26 +343,44 @@ body{
 }
 
 #gitrepos{
-    padding: 20px;
+    padding-top: 5%;
+    margin: 0;
+    height: 100vh;
+    background-image: url(unnamed.jpg);
+    background-size: cover;
+    width: 100%;
+    background-color: darkgoldenrod;
+    justify-content: center;
+    align-content: center;
+    display: block;
+}
+
+#gitrepos table{
+    width: 90%;
+    height: 50%;
+    position: relative;
+    left: 5%;
+}
+
+#git-div{
+    padding: 0;
     margin: 0;
     height: 100vh;
     background-image: url(unnamed.jpg);
     width: 100%;
     background-color: darkgoldenrod;
-    justify-content: center;
-    align-content: center;
-    display: flex;
-}
-
-#git-div{
-    padding: 20px;
-    margin: 0;
-    height: 50vh;
-    background-image: url(unnamed.jpg);
-    width: 100%;
-    background-color: darkgoldenrod;
+    background-size: cover;
     justify-content: center;
     align-content: center;
     text-align: center;
     display: block;
+}
+
+#git-div h1{
+    margin: 0;
+}
+
+#table-repo{
+    width: 50%;
+    height: 50vh;
 }
