@@ -1,29 +1,139 @@
 @media screen and (max-width:425px){
     .navigation_bar{
+        display: none;
+    }
+
+    
+    
+    #home{
+        display: block;
+    }
+
+    #left{
+        width: 100%;
+        height: 40vh;
+    }
+
+    #image-holder{
+        top: 5%;
+        height: 90%;
+        width: 90%;
+    }
+
+    #right{
+        width: 100%;
+        height: 60vh;
         padding: 0;
         margin: 0;
-        height: 10vh;
-        width: 100%;
-        background-image: url("plain.jpg");
-        line-height: 10vh;
-        display: block;
-        position: relative;
-        top: 0px;
-        z-index: 1;
+    }
+
+    #more{
+        padding: 5px;
+        top: 0;
         text-align: center;
+        font-weight: 100;
+        font-family: sans-serif;
     }
 
-    .navigation_bar a{
-        text-decoration: none;
+    #about-page{
+        padding: 0;
+    }
+
+    #about-page p{
         padding: 10px;
-        font-weight: bold;
-        font-size: 22px;
-        color: white;
+        margin: 0;
+        position: relative;
+        top: 5%;
+        left: 10%;
+        width: 80%;
+        font-weight: 100;
+        font-family: sans-serif;
+        font-size: 15px;
     }
 
-    .navigation_bar i{
-        margin-right: 1px;
+    #skills-page{
+        height: 290vh;
     }
-    
-    
+
+    #skill-card{
+        display: block;
+        top: 1%;
+    }
+
+    .card{
+        top:0;
+        width: 80%;
+        height: 80%;
+        position: relative;
+        left: 10%;
+    }
+
+    .experience{
+        width: 90%;
+        height: 50%;
+        background-color: rgba(255, 225, 255, 0.2);
+        margin: 12px;
+        text-align: center;
+        padding: 0;
+        border: inset 2px lightblue;
+    }
+
+    #interests-page{
+        display: block;
+        height: 170vh;
+    }
+
+    #articles{
+        width: 100%;
+        height: 80vh;
+    }
+
+    #article-links{
+        width: 100%;
+        height: 100vh;
+        padding: 5px;
+    }
+
+    #myInterests{
+        width: 100%;
+        padding: 0;
+        height: 80vh;
+    }
+
+    #gitdiv{
+        width: 100%;
+
+    }
+
+    #gitrepos{
+        padding-top: 0;
+        display: flex;
+        justify-content: space-around;
+        width: 0%;
+    }
+
+    #gitrepos table{
+        width: 50%;
+        font-size: 12px;
+    }
+
+    #gitrepos th {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        text-align: left;
+        background-color:#0000FF;
+        color: white;
+        border: 1px solid #ddd;
+        padding: 0;
+    }
+
+    #gitrepos td{
+        padding: 2px;
+        margin: 0;
+    }
+
+    #table-repo{
+        width: 100%;
+        height: 50vh;
+    }
 }
