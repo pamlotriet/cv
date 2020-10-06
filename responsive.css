@@ -235,7 +235,7 @@
     #gitrepos{
         padding-top: 0;
         display: block;
-        justify-content: space-around;
+        justify-content: center;
         width: 0%;
     }
 
