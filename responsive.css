@@ -33,6 +33,27 @@
         font-weight: 100;
         font-family: sans-serif;
     }
+
+    #about-page{
+        padding: 0;
+    }
+
+    #about-page p{
+        padding: 10px;
+        margin: 0;
+        position: relative;
+        top: 5%;
+        left: 10%;
+        width: 80%;
+        font-weight: 100;
+        font-family: sans-serif;
+        font-size: 15px;
+    }
+
+    #about h3{
+        padding: 5px;
+
+    }
 }
 
 
