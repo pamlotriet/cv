@@ -6,6 +6,8 @@
 
     #home{
         display: block;
+        text-align: center;
+        position: fixed;
     }
 
     
@@ -26,8 +28,7 @@
         padding: 0;
         margin: 0; 
         align-content: center;
-        text-align: center;
-        position: relative;
+        
     }
 
     #right h3{
