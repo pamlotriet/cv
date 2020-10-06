@@ -34,10 +34,10 @@
         font-size: 10px;
     }
 
-    #right p{
+    #right  p{
         font-size: 14px;
-        margin: 0;
-        padding: 0;
+        padding: 5;
+        text-align: center;
     }
 
 
