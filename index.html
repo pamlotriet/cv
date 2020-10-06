@@ -75,16 +75,17 @@
                 
                 $.each(data, function(i,status){
                     
-                    statusHTML += '<tr>';
-                    statusHTML += '<td style = "color: black;background-color:white;font-size:16px;padding: 5px;">'+ status.id + '</td>'    
-                    statusHTML += '<td style = "color: black;background-color:white;font-size:16px;padding: 5px;">'+ status.name + '</td>' 
-                    statusHTML += '<td style = "color: black;background-color:white;font-size:16px;padding: 5px;">'+ status.html_url  + '</td>' 
-                    statusHTML += '<td style = "color: black;background-color:white;font-size:16px;padding: 5px;">'+ status.language + '</td>' 
-                    statusHTML += '</tr>';
+                   
+                    statusHTML += '<p style = "color: black;font-size:16px;">'+'ID: '+ status.id + '<p>'    
+                    statusHTML += '<p style = "color: black;font-size:16px;">'+'Name: '+ status.name + '<p>' 
+                    statusHTML += '<p style = "color: black;font-size:16px;">'+'URL: ' + status.html_url  + '<p>' 
+                    statusHTML += '<p style = "color: black;font-size:16px;">'+'Language: ' + status.language + '<p>'
+                    statusHTML += '<br>'; 
+                    
                 });
 
                 //$('tbody').html(statusHTML);
-                document.getElementById('body').innerHTML = statusHTML;
+                document.getElementById('gitrepos').innerHTML = statusHTML;
             }
 
             //send request
@@ -275,20 +276,7 @@
     <div id="git-div">
         <h1 id="repos">My Github Repositories</h1>
         <div id="gitrepos">
-            <table id="table-repo">
-                <thead>
-                
-                    <tr id="table-repositories" >
-                        <th scope="col">ID</th>
-                        <th scope="col">Name</th>
-                        <th scope="col">URL</th>
-                        <th scope="col">Language</th>
-                    </tr>
-                </thead>
-                <tbody id="body">
-                
-                </tbody>
-            </table>
+            
         </div>
     </div>
     
