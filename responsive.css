@@ -233,7 +233,7 @@
 
     #gitrepos{
         padding-top: 0;
-        display: flex;
+        display: block;
         justify-content: space-around;
         width: 0%;
     }
