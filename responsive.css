@@ -6,10 +6,10 @@
 
     #home{
         display: block;
+    }
+
+    #home-page{
         height: 120vh;
-            
-          
-        
     }
 
     #left{
