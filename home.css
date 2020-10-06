@@ -392,23 +392,21 @@ body{
         display: none;
     }
 
-    #home-page{
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        height: 100vh;
-        display: block;
-        text-align: center;
-        align-content: center;
-    }
+  
     #home{
         display: block;
         text-align: center;
-        position: fixed;
-        align-content: center;
     }
 
-    
+    #left{
+        width: 100%;
+        height: 40vh;
+    }
+
+    #image-holder{
+        top: 5%;
+        height: 70%;
+        width: 70%;
+    }
     
 }
-
