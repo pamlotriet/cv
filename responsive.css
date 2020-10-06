@@ -39,7 +39,17 @@
         text-align: center;
     }
 
-
+    #about-page p{
+        padding: 5px;
+        margin: 0;
+        position: relative;
+        top: 5%;
+        left: 10%;
+        width: 80%;
+        font-weight: 100;
+        font-family: sans-serif;
+        font-size: 12px;
+    }
 
 
     
