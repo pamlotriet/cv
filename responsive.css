@@ -1,4 +1,4 @@
-@media screen (max-width:375px)
+@media screen and (max-width:375px)
 {
     .navigation_bar{
         display: none;
