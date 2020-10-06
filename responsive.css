@@ -1,28 +1,3 @@
-@media screen and (max-width:375px)
-{
-    .navigation_bar{
-        display: none;
-    }
-
-    #home-page{
-        padding: 0;
-        margin: 0;
-        width: 100%;
-        height: 100vh;
-        display: block;
-        text-align: center;
-        align-content: center;
-    }
-    #home{
-        display: block;
-        text-align: center;
-        position: fixed;
-        align-content: center;
-    }
-
-    
-    
-}
 
 /*=======================================================================================================*/
 
