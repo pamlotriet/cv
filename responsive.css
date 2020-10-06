@@ -34,6 +34,12 @@
         font-family: sans-serif;
     }
 
+
+    #about{
+        padding: 5px;
+
+    }
+
     #about-page{
         padding: 0;
     }
@@ -50,10 +56,7 @@
         font-size: 15px;
     }
 
-    #about h3{
-        padding: 5px;
-
-    }
+    
 }
 
 
