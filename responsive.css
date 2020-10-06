@@ -1,4 +1,4 @@
-@media screen and (max-width:375px)
+@media screen and (min-width:375px) and (max-width:375px)
 {
     .navigation_bar{
         display: none;
@@ -59,8 +59,9 @@
     
 }
 
+/*=======================================================================================================*/
 
-@media screen and (min-width:375px) and (max-width:425px){
+@media screen  and (max-width:425px){
 
     .navigation_bar{
         display: none;
