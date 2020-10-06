@@ -55,7 +55,7 @@
     #about-page p{
         padding: 2.5px;
         font-size: 13.5px;
-        top: 2%;
+        top: 3%;
 
     }
 
@@ -180,7 +180,7 @@
         padding: 10px;
         margin: 0;
         position: relative;
-        top: 2%;
+        top: 3%;
         left: 10%;
         width: 80%;
         font-weight: 100;
@@ -303,7 +303,7 @@
         padding: 10px;
         margin: 0;
         position: relative;
-        top: 2%;
+        top: 3%;
         left: 10%;
         width: 80%;
         font-weight: 100;
@@ -432,7 +432,7 @@
         padding: 10px;
         margin: 0;
         position: relative;
-        top: 2%;
+        top: 3%;
         left: 10%;
         width: 80%;
         font-weight: 100;
@@ -501,6 +501,5 @@
 
     
 }
-
 
 
