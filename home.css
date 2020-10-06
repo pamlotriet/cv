@@ -414,12 +414,14 @@ body{
         height: 60vh;
         padding: 0;
         margin: 0;
+        text-align: center;
+        align-content: center;
     }
 
     #more{
         padding: 5px;
         top: 0;
-        text-align: center;
+        
         font-weight: 100;
         font-family: sans-serif;
     }
