@@ -103,7 +103,7 @@
 
     #article-links{
         width: 100%;
-        height: 100vh;
+        height: 80vh;
         padding: 5px;
     }
 
@@ -243,6 +243,11 @@
         height: 80vh;
     }
 
+    #myInterests p{
+       top: 5%;
+       padding: 5px;
+    }
+
     #git-div{
         height: 180vh;
     }
@@ -372,6 +377,16 @@
         height: 80vh;
     }
 
+    #myInterests p{
+       top: 5%;
+       padding: 5px;
+    }
+
+    
+    #myInterests h3{
+        top: 5%;
+     }
+
     #git-div{
         height: 140vh;
     }
@@ -500,6 +515,16 @@
         padding: 0;
         height: 80vh;
     }
+
+    #myInterests p{
+       top: 5%;
+       padding: 5px;
+    }
+
+    
+    #myInterests h3{
+        top: 5%;
+     }
 
     #git-div{
         height: 140vh;
