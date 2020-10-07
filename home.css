@@ -93,16 +93,17 @@ body{
 #more{
     position: relative;
     top: 30vh;
+    font-size: 15px;
 }
 
 #right h3{
-    font-size: 24px;
+    font-size: 32px;
     margin: 0;
     padding: 10px;
 }
 
 #right p{
-    font-size: 15px;
+    font-size: 24px;
     padding: 10px;
     text-align: left;
 }
@@ -111,7 +112,7 @@ body{
     height: 5vh;
     width: 100%;
     text-align: center;
-    font-size: 20px;
+    font-size: 36px;
     line-height: 5vh;
     padding: 5px;
     background-color: black;
@@ -129,13 +130,14 @@ body{
 #about-page{
     padding-top: 40px;
     margin: 0;
-    height: 100vh;
+    height: 60vh;
     width: 100%;
     background-image: url(brick-wallpaper-dark-background.jpg);
     background-size: cover;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
+   
     
 }
 
@@ -143,7 +145,7 @@ body{
     padding: 15px;
     margin: 0;
     position: relative;
-    top: 13%;
+    top: 5%;
     width: 70%;
     left: 15%;
     color: whitesmoke;
@@ -221,7 +223,7 @@ body{
 #interests-page{
     padding: 0;
     margin: 0;
-    height: 120vh;
+    height: 90vh;
     background-image: url(brick-wallpaper-dark-background.jpg);
     width: 100%;
     background-color: darkgoldenrod;
@@ -264,20 +266,20 @@ body{
     padding: 15px;;
 }
 
-#facebook:hover{
-    color: dodgerblue;
+#facebook{
+    color: #5E4BE3 ;
 }
 
-#instagram:hover{
-    color: orange;
+#instagram{
+    color: #FF00B5 ;
 }
 
-#telegram:hover{
-    color:grey;
+#twitter{
+    color:#3498DB ;
 }
 
-#mail:hover{
-    color:red;
+#email{
+    color:red ;
 }
 
 
@@ -307,12 +309,14 @@ body{
     color: white;
     justify-content: center;
     align-content: center;
-    padding: 0;
+    padding: 25px;
     font-size: 15px;
     text-align: center;
     width: 50%;
     height: 100vh;
 }
+
+
 
 
 
@@ -331,7 +335,7 @@ body{
 
 
 #myInterests p{
-    font-size: 18px;
+    font-size: 22px;
 }
 
 #gitrepos{
@@ -366,8 +370,17 @@ body{
 
 #git-div h1{
     margin: 0;
+    top: 20%;
+    padding: 20px;
 }
 
-
+#youtube-vids{
+    height: 50vh;
+    display: flex;
+    top: 20%;
+    align-content: center;
+    left: 20%;
+    background-image: url(brick-wallpaper-dark-background.jpg);
+}
 
 /*============================================================================*/
