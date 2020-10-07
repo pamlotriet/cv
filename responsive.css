@@ -93,24 +93,24 @@
 
     #interests-page{
         display: block;
-        height: 170vh;
+        height: 180vh;
     }
 
     #articles{
         width: 100%;
-        height: 100vh;
+        height: 90vh;
     }
 
     #article-links{
         width: 100%;
-        height: 80vh;
+        height: 100vh;
         padding: 5px;
     }
 
     #myInterests{
         width: 100%;
         padding: 0;
-        height: 80vh;
+        height: 90vh;
     }
 
     #myInterests p{
@@ -223,12 +223,12 @@
 
     #interests-page{
         display: block;
-        height: 170vh;
+        height: 180vh;
     }
 
     #articles{
         width: 100%;
-        height: 80vh;
+        height: 90vh;
     }
 
     #article-links{
@@ -240,13 +240,18 @@
     #myInterests{
         width: 100%;
         padding: 0;
-        height: 80vh;
+        height: 90vh;
     }
 
     #myInterests p{
        top: 5%;
        padding: 5px;
     }
+
+    
+    #myInterests h3{
+        top: 5%;
+     }
 
     #git-div{
         height: 180vh;
@@ -357,12 +362,12 @@
 
     #interests-page{
         display: block;
-        height: 170vh;
+        height: 180vh;
     }
 
     #articles{
         width: 100%;
-        height: 80vh;
+        height: 90vh;
     }
 
     #article-links{
@@ -374,7 +379,7 @@
     #myInterests{
         width: 100%;
         padding: 0;
-        height: 80vh;
+        height: 90vh;
     }
 
     #myInterests p{
