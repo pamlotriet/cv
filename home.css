@@ -50,10 +50,10 @@ body{
     display: flex;
     padding: 0;
     margin: 0;
-    background-image: url('home.png');
+    background-image: url('white.jpg');
     background-size: cover;
     height: 100vh;
-    color: azure;
+    color: black;
   
 }
 
@@ -154,13 +154,13 @@ body{
     margin: 0;
     height: 100vh;
     width: 100%;
-    background-image: url(unnamed.jpg);
+    background-image: url(white.jpg);
 }
 
 #skill-card{
     width: 100%;
     height: 70vh;
-    background-image: url(unnamed.jpg);
+    background-image: url(white.jpg);
     background-size: cover;
     position: relative;
     top: 15%;
@@ -323,7 +323,7 @@ body{
     padding-top: 5%;
     margin: 0;
     height: 100vh;
-    background-image: url(unnamed.jpg);
+    background-image: url(white.jpg);
     background-size: cover;
     width: 100%;
     background-color: darkgoldenrod;
@@ -338,7 +338,7 @@ body{
     padding: 0;
     margin: 0;
     height: 160vh;
-    background-image: url(unnamed.jpg);
+    background-image: url(white.jpg);
     width: 100%;
     background-color: darkgoldenrod;
     background-size: cover;
