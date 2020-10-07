@@ -380,9 +380,12 @@ body{
     top: 20%;
     align-content: center;
     padding: 100px;
-    
     background-image: url(brick-wallpaper-dark-background.jpg);
 }
 
+#youtube-vids iframe{
+    width:420px;
+    height:250px;
+}
 
 /*============================================================================*/
