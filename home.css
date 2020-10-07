@@ -265,6 +265,7 @@ body{
 
 
 
+
 #loader{
     position: fixed;
     width: 100%;
@@ -336,7 +337,7 @@ body{
 #git-div{
     padding: 0;
     margin: 0;
-    height: 100vh;
+    height: 160vh;
     background-image: url(unnamed.jpg);
     width: 100%;
     background-color: darkgoldenrod;
