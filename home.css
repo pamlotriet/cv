@@ -220,7 +220,7 @@ body{
 #interests-page{
     padding: 0;
     margin: 0;
-    height: 120vh;
+    height: 80vh;
     background-image: url(brick-wallpaper-dark-background.jpg);
     width: 100%;
     background-color: darkgoldenrod;
@@ -372,16 +372,17 @@ body{
 
 
 #youtube-vids{
-    height: 50vh;
+    height: 40vh;
+    width: 100%;
     display: flex;
     top: 20%;
     align-content: center;
-    padding: 100px;
+    padding-left: 2.5%;
     background-image: url(brick-wallpaper-dark-background.jpg);
 }
 
 #youtube-vids iframe{
-    width:420px;
+    width:320px;
     height:250px;
 }
 
