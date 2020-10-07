@@ -1,541 +1,390 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 
-@media screen and (max-width:376px)
-{
-    .navigation_bar{
-        display: none;
-    }
+.navigation_bar{
+    padding: 0;
+    margin: 0;
+    height: 10vh;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(brick-wallpaper-dark-background.jpg);
+    line-height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
 
-    #home{
-        display: block;
-        text-align: center;
-    }
+.navigation_bar h1{
+    padding: 0;
+    margin: 0;
+}
 
-    #left{
-        width: 100%;
-        height: 40vh;
-    }
+.navigation_bar a{
+    text-decoration: none;
+    padding: 0;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
 
-    #image-holder{
-        top: 5%;
-        padding: 0;
-        height: 80%;
-        width: 70%;
-    }
+.navigation_bar i{
+    margin-right: 5px;
+}
 
-    #right{
-        width: 100%;
-        height: 60vh;
-        padding: 0;
-        margin: 0;
-        position: absolute;
-        top: 5%;
-    }
+.navigation_bar a:hover{
+   color: lime;
+}
 
-    #right h3{
-        text-align: center;
-        font-size: 20px;
-        font-weight: 10000;
-        
-    }
+#home-page{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+}
 
-    #right p{
-        padding: 5px;
-        top: 0;
-        margin: 0;
-        text-align: center;
-        font-weight: 100;
-        font-family: sans-serif;
-        font-size: 16px;
-    }
+#home{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    background-image: url('white.jpg');
+    background-size: cover;
+    height: 100vh;
+    color: black;
+  
+}
+
+#left{
+    height: 90vh;
+    width: 40%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#image-holder{
+    width: 90%;
+    height: 70vh;
+    border: 3px groove darkkhaki;
+    position: relative;
+    top: 20vh;
+}
+
+#image-holder img{
+    width: 100%;
+    height: 100%;
+}
+
+#right{
+    height: 90vh;
+    width: 60%;
+    padding: 0;
+    margin: 0;
+}
+
+#right h3{
+    text-align: center;
+}
+
+#more{
+    position: relative;
+    top: 30vh;
+    font-size: 15px;
+}
+
+#right h3{
+    font-size: 32px;
+    margin: 0;
+    padding: 10px;
+}
+
+#right p{
+    font-size: 24px;
+    padding: 10px;
+    text-align: left;
+}
+
+.heading{
+    height: 5vh;
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    line-height: 5vh;
+    padding: 5px;
+    background-color: black;
+    color: aliceblue;
+    padding: 0;
+    margin: 0;
+
+}
+
+.heading h3{
+    padding: 0;
+    margin: 0;
+}
+
+#about-page{
+    padding-top: 40px;
+    margin: 0;
+    height: 60vh;
+    width: 100%;
+    background-image: url(brick-wallpaper-dark-background.jpg);
+    background-size: cover;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+   
     
-    #about-page{
-        padding: 0;
-    }
+}
 
-    #about-page p{
-        padding: 2.5px;
-        font-size: 13.5px;
-        top: 3%;
+#about-page p{
+    padding: 15px;
+    margin: 0;
+    position: relative;
+    top: 5%;
+    width: 70%;
+    left: 15%;
+    color: whitesmoke;
+}
 
-    }
 
-    #skill-card{
-        display:block;
-    }
+#skills-page{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url(white.jpg);
+}
 
-    #skills-page{
-        height: 325vh;
-    }
+#skill-card{
+    width: 100%;
+    height: 70vh;
+    background-image: url(white.jpg);
+    background-size: cover;
+    position: relative;
+    top: 15%;
+    display: flex;
+    justify-content: space-around;
+}
 
-    #skill-card{
-        display: block;
-        top: 1%;
-    }
+.card{
+    width: 19%;
+    height: 87%;
+    background-image: url(pexels-photo-952670.jpeg);
+    background-size: contain;
+    margin: 0;
+    position: relative;
+    top: 28px;
+    border: 2px outset lightblue;
+}
 
-    .card{
-        top:0;
-        width: 80%;
-        height: 90%;
-        position: relative;
-        left: 10%;
-        
-    }
+.preview{
+    width: 90%;
+    height: 40%;
+    background-color: azure;
+    margin: 12px;
+    border: 2px outset lightblue;
+}
 
-    .experience{
-        width: 90%;
-        height: 50%;
-        background-color: rgba(255, 225, 255, 0.2);
-        margin: 12px;
-        text-align: center;
-        padding: 0;
-        border: inset 2px lightblue;
-    }
+.preview img{
+    width: 100%;
+    height: 100%;
+}
+
+.experience{
+    width: 90%;
+    height: 50%;
+    background-color: rgba(255, 225, 255, 0.2);
+    margin: 12px;
+    text-align: center;
+    padding: 0;
+    border: inset 2px lightblue;
+}
+
+.experience p{
+    padding-top: 5px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.experience progress{
+    padding: 2px;
+}
+
+#file{
+    padding: 12px;
+    width: 80%;
+}
 
 #interests-page{
-        display: block;
-        height: 180vh;
-    }
-
-    #articles{
-        width: 100%;
-        height: 90vh;
-    }
-
-    #article-links{
-        width: 100%;
-        height: 100vh;
-        padding: 5px;
-    }
-
-    #myInterests{
-        width: 100%;
-        padding: 0;
-        height: 90vh;
-    }
-
-    #myInterests p{
-       top: 5%;
-       padding: 5px;
-    }
-
-    
-    #myInterests h3{
-        top: 5%;
-     }
-
-    #git-div{
-        height: 180vh;
-    }
-
+    padding: 0;
+    margin: 0;
+    height: 90vh;
+    background-image: url(brick-wallpaper-dark-background.jpg);
+    width: 100%;
+    background-color: darkgoldenrod;
+    display: flex;
 }
 
-/*=======================================================================================================*/
-
-@media screen and (min-width:376px) and (max-width:426px){
-
-    .navigation_bar{
-        display: none;
-    }
-
-    #home{
-        display: block;
-    }
-
-    #left{
-        width: 100%;
-        height: 40vh;
-    }
-
-    #image-holder{
-        top: 5%;
-        height: 97%;
-        width: 90%;
-    }
-
-    #right{
-        width: 100%;
-        height: 60vh;
-        padding: 0;
-        margin: 0;
-    }
-
-    #more{
-        padding: 5px;
-        top: 0;
-        text-align: center;
-        font-weight: 100;
-        font-family: sans-serif;
-        font-size: 16px;
-    }
-
-    #right p{
-        
-        text-align: center;
-        font-weight: 100;
-        font-family: sans-serif;
-        font-size: 13.5px;
-    }
-
-    
-
-    #about-page{
-        padding: 0;
-    }
-
-    #about-page p{
-        padding: 10px;
-        margin: 0;
-        position: relative;
-        top: 3%;
-        left: 10%;
-        width: 80%;
-        font-weight: 100;
-        font-family: sans-serif;
-        font-size: 13.5px;
-    }
-
-    #skills-page{
-        height: 325vh;
-    }
-
-    #skill-card{
-        display: block;
-        top: 1%;
-    }
-
-    .card{
-        top:0;
-        width: 80%;
-        height: 90%;
-        position: relative;
-        left: 10%;
-    }
-
-    .experience{
-        width: 90%;
-        height: 50%;
-        background-color: rgba(255, 225, 255, 0.2);
-        margin: 12px;
-        text-align: center;
-        padding: 0;
-        border: inset 2px lightblue;
-    }
-
-    #interests-page{
-        display: block;
-        height: 180vh;
-    }
-
-    #articles{
-        width: 100%;
-        height: 90vh;
-    }
-
-    #article-links{
-        width: 100%;
-        height: 100vh;
-        padding: 5px;
-    }
-
-    #myInterests{
-        width: 100%;
-        padding: 0;
-        height: 90vh;
-    }
-
-    #myInterests p{
-       top: 5%;
-       padding: 5px;
-    }
-
-    
-    #myInterests h3{
-        top: 5%;
-     }
-
-    #git-div{
-        height: 180vh;
-    }
-
-    
+#more-about-page{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: darkgreen;
 }
 
-@media screen and (min-width:425px) and (max-width:769px){
-
-    .navigation_bar{
-        display: none;
-    }
-
-    #home{
-        display: block;
-    }
-
-    #left{
-        width: 100%;
-        height: 60vh;
-    }
-
-    #image-holder{
-        top: 5%;
-        height: 97%;
-        width: 90%;
-    }
-
-    #right{
-        width: 100%;
-        height: 40vh;
-        padding: 0;
-        margin: 0;
-    }
-
-    #about{
-        top: 10%;
-        padding:5px;
-    }
-
-    #more{
-        padding: 5px;
-        top: 0;
-        text-align: center;
-        font-weight: 100;
-        font-family: sans-serif;
-        font-size: 20px;
-    }
-
-    #right p{
-        
-        text-align: center;
-        font-weight: 100;
-        font-family: sans-serif;
-        font-size: 13.5px;
-    }
-
-    #about-page{
-        padding: 0;
-        height: 80vh;
-    }
-
-    #about-page p{
-        padding: 10px;
-        margin: 0;
-        position: relative;
-        top: 3%;
-        left: 10%;
-        width: 80%;
-        font-weight: 100;
-        font-family: sans-serif;
-        font-size: 18px;
-    }
-
-    #skills-page{
-        height: 370vh;
-    }
-
-    #skill-card{
-        display: block;
-        top: 1%;
-      
-    }
-
-    .card{
-        top:0;
-        width: 80%;
-        height: 90%;
-        position: relative;
-        left: 10%;
-    }
-
-
-    .preview
-    {
-        width: 95%;
-    }
-    .experience{
-        width: 95%;
-        height: 50%;
-        background-color: rgba(255, 225, 255, 0.2);
-        margin: 12px;
-        text-align: center;
-        padding: 0;
-        border: inset 2px lightblue;
-    }
-
-    #interests-page{
-        display: block;
-        height: 180vh;
-    }
-
-    #articles{
-        width: 100%;
-        height: 90vh;
-    }
-
-    #article-links{
-        width: 100%;
-        height: 100vh;
-        padding: 5px;
-    }
-
-    #myInterests{
-        width: 100%;
-        padding: 0;
-        height: 90vh;
-    }
-
-    #myInterests p{
-       top: 5%;
-       padding: 5px;
-    }
-
-    
-    #myInterests h3{
-        top: 5%;
-     }
-
-    #git-div{
-        height: 140vh;
-    }
-
-    
+#contact-page{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
 }
 
-@media screen and (min-width:769px) and (max-width:1081px){
+#contact-page h3{
+    margin: 0;
+    padding: 8%;
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color:gold;
+}
 
-    .navigation_bar{
-        display: none;
-    }
+#social{
+    font-size: 60px;
+    text-align: center;
+    padding: 20px;
+    color: aliceblue;
+}
 
-    #home{
-        display: block;
-    }
+#social i{
+    padding: 15px;;
+}
 
-    #left{
-        width: 100%;
-        height: 60vh;
-    }
+#facebook{
+    color: #5E4BE3 ;
+}
 
-    #image-holder{
-        top: 5%;
-        height: 97%;
-        width: 90%;
-    }
+#instagram{
+    color: #FF00B5 ;
+}
 
-    #right{
-        width: 100%;
-        height: 40vh;
-        padding: 0;
-        margin: 0;
-    }
+#twitter{
+    color:#3498DB ;
+}
 
-    #about{
-        top: 10%;
-        padding:5px;
-    }
-
-    #more{
-        padding: 5px;
-        top: 0;
-        text-align: center;
-        font-weight: 100;
-        font-family: sans-serif;
-        font-size: 20px;
-    }
-
-    #right p{
-        
-        text-align: center;
-        font-weight: 100;
-        font-family: sans-serif;
-        font-size: 13.5px;
-    }
-
-    #about-page{
-        padding: 0;
-        height: 80vh;
-    }
-
-    #about-page p{
-        padding: 10px;
-        margin: 0;
-        position: relative;
-        top: 3%;
-        left: 10%;
-        width: 80%;
-        font-weight: 100;
-        font-family: sans-serif;
-        font-size: 18px;
-    }
-
-    #skills-page{
-        height: 340vh;
-    }
-
-    #skill-card{
-        display: block;
-        top: 1%;
-      
-    }
-
-    .card{
-        top:0;
-        width: 80%;
-        height: 90%;
-        position: relative;
-        left: 10%;
-    }
+#email{
+    color:red ;
+}
 
 
-    .preview
-    {
-        width: 95%;
-    }
-    .experience{
-        width: 95%;
-        height: 50%;
-        background-color: rgba(255, 225, 255, 0.2);
-        margin: 12px;
-        text-align: center;
-        padding: 0;
-        border: inset 2px lightblue;
-    }
+#loader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 50;
+    background: #000 url("loader.gif") no-repeat center center;
+}
 
-    #interests-page{
-        display: block;
-        height: 170vh;
-    }
+#articles{
+    color: white;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    text-align: center;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    left: 50;
+}
 
-    #articles{
-        width: 100%;
-        height: 80vh;
-    }
+#myInterests{
+    color: white;
+    justify-content: center;
+    align-content: center;
+    padding: 25px;
+    font-size: 15px;
+    text-align: center;
+    width: 50%;
+    height: 100vh;
+}
 
-    #article-links{
-        width: 100%;
-        height: 100vh;
-        padding: 5px;
-    }
 
-    #myInterests{
-        width: 100%;
-        padding: 0;
-        height: 80vh;
-    }
 
-    #myInterests p{
-       top: 5%;
-       padding: 5px;
-    }
 
-    
-    #myInterests h3{
-        top: 5%;
-     }
 
-    #git-div{
-        height: 140vh;
-    }
-
+#article-links{
+    color: white;
+    align-content: center;
+    padding: 0;
+    text-align: center;
+    width: 50%;
+    height: 100vh;
+    display: block;
+    font-size: 16px;
     
 }
 
 
+
+#myInterests p{
+    font-size: 22px;
+}
+
+#gitrepos{
+   
+    margin: 0;
+    height: 100vh;
+    background-image: url(white.jpg);
+    background-size: cover;
+    width: 100%;
+    background-color: darkgoldenrod;
+    justify-content: center;
+    align-content: center;
+    display: block;
+}
+
+
+
+#git-div{
+    padding: 0;
+    margin: 0;
+    height: 150vh;
+    background-image: url(white.jpg);
+    width: 100%;
+    background-color: darkgoldenrod;
+    background-size: cover;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    display: block;
+    top: 0%;
+}
+
+#git-div h1{
+    margin: 0;
+    top: 20%;
+    padding: 20px;
+}
+
+#youtube-vids{
+    height: 50vh;
+    display: flex;
+    top: 20%;
+    align-content: center;
+    padding: 100px;
+    
+    background-image: url(brick-wallpaper-dark-background.jpg);
+}
+
+#entire-page{
+    display: flexbox ;
+}
+/*============================================================================*/
