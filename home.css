@@ -136,6 +136,7 @@ body{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
+    
 }
 
 #about-page p{
@@ -346,12 +347,7 @@ body{
     display: block;
 }
 
-#gitrepos table{
-    width: 90%;
-    height: 50%;
-    position: relative;
-    left: 5%;
-}
+
 
 #git-div{
     padding: 0;
