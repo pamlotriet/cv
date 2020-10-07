@@ -115,7 +115,13 @@
 
     #myInterests p{
        top: 5%;
+       padding: 5px;
     }
+
+    
+    #myInterests h3{
+        top: 5%;
+     }
 
     #git-div{
         height: 180vh;
