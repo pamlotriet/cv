@@ -1,155 +1,3 @@
-@media screen and (max-width:311px){
-    
-    .navigation_bar{
-        display: none;
-    }
-
-    #home{
-        display: block;
-        text-align: center;
-    }
-
-    #left{
-        width: 100%;
-        height: 40vh;
-    }
-
-    #image-holder{
-        top: 5%;
-        padding: 0;
-        height: 80%;
-        width: 70%;
-    }
-
-    #right{
-        width: 100%;
-        height: 60vh;
-        padding: 0;
-        margin: 0;
-        position: absolute;
-        top: 5%;
-    }
-
-    #right h3{
-        text-align: center;
-        font-size: 20px;
-        font-weight: 10000;
-        
-    }
-
-    #right p{
-        padding: 5px;
-        top: 0;
-        margin: 0;
-        text-align: center;
-        font-weight: 100;
-        font-family: sans-serif;
-        font-size: 15.5px;
-    }
-
-    #about-page{
-        padding: 0;
-        height: 120vh;
-    }
-
-    #about-page p{
-        padding: 2.5px;
-        font-size: 13.5px;
-        top: 3%;
-
-    }
-
-    #skill-card{
-        display:block;
-    }
-
-    #skills-page{
-        height: 330vh;
-    }
-
-    #skill-card{
-        display: block;
-        top: 1%;
-    }
-
-    .card{
-        top:0;
-        width: 80%;
-        height: 90%;
-        position: relative;
-        left: 10%;
-        
-    }
-
-    .experience{
-        width: 90%;
-        height: 50%;
-        background-color: rgba(255, 225, 255, 0.2);
-        margin: 12px;
-        text-align: center;
-        padding: 0;
-        border: inset 2px lightblue;
-    }
-
-    #interests-page{
-        display: block;
-        height: 240vh;
-    }
-
-    #articles{
-        width: 100%;
-        height: 40%;
-    }
-
-    #article-links{
-        width: 100%;
-        height: 100vh;
-        padding: 5px;
-    }
-
-    #myInterests{
-        width: 100%;
-        padding: 0;
-        height: 50%;
-    }
-
-    #myInterests p{
-       top: 5%;
-       padding: 5px;
-    }
-
-    
-    #myInterests h3{
-        top: 0%;
-     }
-
-    #git-div{
-        height: 190vh;
-    }
-
-    #youtube-vids{
-        display: block;
-        height: 105vh;
-        position: relative;
-        width: 100%;
-        left: 0;
-        padding-left: 5px;
-       
-    }
-
-    #contact-page{
-        height: 60vh;
-    }
-
-    #youtube-vids iframe{
-        width:auto;
-        height:auto;
- 
-    }
-
-}
-
-
 
 @media screen and (min-width:311px)  and (max-width:349px){
     .navigation_bar{
@@ -695,7 +543,7 @@
 
 #interests-page{
         display: block;
-        height: 180vh;
+        height: 200vh;
     }
 
     #articles{
@@ -712,7 +560,7 @@
     #myInterests{
         width: 100%;
         padding: 0;
-        height: 90vh;
+        height: 120vh;
     }
 
     #myInterests p{
