@@ -50,10 +50,10 @@ body{
     display: flex;
     padding: 0;
     margin: 0;
-    background-image: url('white.jpg');
+    background-image: url('home.png');
     background-size: cover;
     height: 100vh;
-    color: black;
+    color: azure;
   
 }
 
@@ -93,17 +93,16 @@ body{
 #more{
     position: relative;
     top: 30vh;
-    font-size: 15px;
 }
 
 #right h3{
-    font-size: 32px;
+    font-size: 24px;
     margin: 0;
     padding: 10px;
 }
 
 #right p{
-    font-size: 24px;
+    font-size: 15px;
     padding: 10px;
     text-align: left;
 }
@@ -112,7 +111,7 @@ body{
     height: 5vh;
     width: 100%;
     text-align: center;
-    font-size: 36px;
+    font-size: 20px;
     line-height: 5vh;
     padding: 5px;
     background-color: black;
@@ -130,22 +129,20 @@ body{
 #about-page{
     padding-top: 40px;
     margin: 0;
-    height: 60vh;
+    height: 100vh;
     width: 100%;
     background-image: url(brick-wallpaper-dark-background.jpg);
     background-size: cover;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
-   
-    
 }
 
 #about-page p{
     padding: 15px;
     margin: 0;
     position: relative;
-    top: 5%;
+    top: 13%;
     width: 70%;
     left: 15%;
     color: whitesmoke;
@@ -157,13 +154,13 @@ body{
     margin: 0;
     height: 100vh;
     width: 100%;
-    background-image: url(white.jpg);
+    background-image: url(unnamed.jpg);
 }
 
 #skill-card{
     width: 100%;
     height: 70vh;
-    background-image: url(white.jpg);
+    background-image: url(unnamed.jpg);
     background-size: cover;
     position: relative;
     top: 15%;
@@ -223,7 +220,7 @@ body{
 #interests-page{
     padding: 0;
     margin: 0;
-    height: 90vh;
+    height: 120vh;
     background-image: url(brick-wallpaper-dark-background.jpg);
     width: 100%;
     background-color: darkgoldenrod;
@@ -266,21 +263,6 @@ body{
     padding: 15px;;
 }
 
-#facebook{
-    color: #5E4BE3 ;
-}
-
-#instagram{
-    color: #FF00B5 ;
-}
-
-#twitter{
-    color:#3498DB ;
-}
-
-#email{
-    color:red ;
-}
 
 
 #loader{
@@ -309,14 +291,12 @@ body{
     color: white;
     justify-content: center;
     align-content: center;
-    padding: 25px;
+    padding: 0;
     font-size: 15px;
     text-align: center;
     width: 50%;
     height: 100vh;
 }
-
-
 
 
 
@@ -335,14 +315,14 @@ body{
 
 
 #myInterests p{
-    font-size: 22px;
+    font-size: 18px;
 }
 
 #gitrepos{
-   
+    padding-top: 5%;
     margin: 0;
     height: 100vh;
-    background-image: url(white.jpg);
+    background-image: url(unnamed.jpg);
     background-size: cover;
     width: 100%;
     background-color: darkgoldenrod;
@@ -356,8 +336,8 @@ body{
 #git-div{
     padding: 0;
     margin: 0;
-    height: 150vh;
-    background-image: url(white.jpg);
+    height: 100vh;
+    background-image: url(unnamed.jpg);
     width: 100%;
     background-color: darkgoldenrod;
     background-size: cover;
@@ -365,14 +345,30 @@ body{
     align-content: center;
     text-align: center;
     display: block;
-    top: 0%;
 }
 
 #git-div h1{
     margin: 0;
-    top: 20%;
-    padding: 20px;
 }
+
+
+#facebook{
+    color: #5E4BE3 ;
+}
+
+#instagram{
+    color: #FF00B5 ;
+}
+
+#twitter{
+    color:#3498DB ;
+}
+
+#email{
+    color:red ;
+}
+
+
 
 #youtube-vids{
     height: 50vh;
