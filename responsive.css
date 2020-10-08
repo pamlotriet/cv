@@ -22,11 +22,11 @@
         top: 5%;
         padding: 0;
         height: 80%;
-        width: 70vw;
+        width: 70%;
     }
 
     #right{
-        width: 100vw;
+        width: 100%;
         height: 90vh;
         padding: 0;
         margin: 0;
@@ -46,7 +46,7 @@
         top: 0;
         margin: 0;
         text-align: center;
-        width: 100vw;
+        width: 100%;
         font-weight: 100;
         font-family: Arial, Helvetica, sans-serif;
         font-size: 12px;
@@ -80,7 +80,7 @@
 
     .card{
         top:0;
-        width: 80vw;
+        width: 80%;
         height: 90%;
         position: relative;
         left: 10%;
@@ -88,7 +88,7 @@
     }
 
     .experience{
-        width: 90vw;
+        width: 90%;
         height: 50%;
         background-color: rgba(255, 225, 255, 0.2);
         margin: 12px;
@@ -103,18 +103,18 @@
     }
 
     #articles{
-        width: 100vw;
+        width: 100%;
         height: 40%;
     }
 
     #article-links{
-        width: 100vw;
+        width: 100%;
         height: 100%;
         padding: 5px;
     }
 
     #myInterests{
-        width: 100vw;
+        width: 100%;
         padding: 0;
         height: 140%;
         top: 0%;
@@ -139,7 +139,7 @@
     #youtube-vids{
         display: block;
         height: 200vh;
-        width: 100vw;
+        width: 100%;
         left: 2.5%;
         padding-left:2.5%;
     }
