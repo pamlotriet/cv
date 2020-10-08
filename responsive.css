@@ -10,7 +10,7 @@
     #home{
         display: block;
         text-align: center;
-        height: 80vh;
+        height: 100vh;
     }
 
     #left{
@@ -55,7 +55,7 @@
     
     #about-page{
         padding: 0;
-        height: 95vh;
+        height: 115vh;
     }
 
     #about-page p{
@@ -97,7 +97,7 @@
         border: inset 2px lightblue;
     }
 
-#interests-page{
+    #interests-page{
         display: block;
         height: 260vh;
     }
@@ -139,8 +139,8 @@
     #youtube-vids{
         display: block;
         height: 200vh;
-        width: auto;
-        left: 0%;
+        width: 100%;
+        left: 2.5%;
         padding-left: 0%;
     }
 
