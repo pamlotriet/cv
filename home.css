@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 .navigation_bar{
@@ -134,8 +135,7 @@ body{
     background-image: url(brick-wallpaper-dark-background.jpg);
     background-size: cover;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
+    
 }
 
 #about-page p{
@@ -146,6 +146,8 @@ body{
     width: 70%;
     left: 15%;
     color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
 }
 
 
@@ -373,11 +375,11 @@ body{
 
 #youtube-vids{
     height: 40vh;
-    width: 100%;
+    width: auto;
     display: flex;
     top: 20%;
     align-content: center;
-    padding-left: 2.5%;
+    
     background-image: url(brick-wallpaper-dark-background.jpg);
 }
 
