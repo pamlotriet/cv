@@ -375,10 +375,11 @@ html, body{
 
 
 #youtube-vids{
-    height: 40vh;
-    width: auto;
+    height: 60vh;
+    width: 100%;
     display: flex;
-    top: 20%;
+    padding-top: 10%;
+    top: 0%;
     align-content: center;
     position: relative;
     background-image: url(brick-wallpaper-dark-background.jpg);
