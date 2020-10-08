@@ -382,6 +382,7 @@ html, body{
     align-content: center;
     position: relative;
     background-image: url(brick-wallpaper-dark-background.jpg);
+    padding-left: 8%;
 }
 
 #youtube-vids iframe{
