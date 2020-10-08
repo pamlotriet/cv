@@ -1,7 +1,165 @@
+@media screen and (orientation:portrait) and (max-width:361px)
+{
+    .navigation_bar{
+        display: none;
+    }
+
+    #home{
+        display: block;
+        text-align: center;
+        height: 100vh;
+    }
+
+    #left{
+        width: 100%;
+        height: 40vh;
+    }
+
+    #image-holder{
+        top: 5%;
+        padding: 0;
+        height: 80%;
+        width: 70%;
+    }
+
+    #right{
+        width: 90%;
+        height: 90vh;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 5%;
+    }
+
+    #right h3{
+        text-align: center;
+        font-size: 20px;
+        font-weight: 10000;
+        
+    }
+
+    #right p{
+        padding: 10px;
+        top: 0;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+        font-weight: 100;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        padding-left: 10%;
+        left: 10%
+        
+    }
+    
+    #about-page{
+        padding: 0;
+        height: 130vh;
+    }
+
+    #about-page p{
+        padding: 2.5px;
+        font-size: 13.5px;
+        top: 3%;
+
+    }
+
+    #skill-card{
+        display:block;
+    }
+
+    #skills-page{
+        height: 325vh;
+    }
+
+    #skill-card{
+        display: block;
+        top: 1%;
+    }
+
+    .card{
+        top:0;
+        width: 80%;
+        height: 90%;
+        position: relative;
+        left: 10%;
+        
+    }
+
+    .experience{
+        width: 90%;
+        height: 50%;
+        background-color: rgba(255, 225, 255, 0.2);
+        margin: 12px;
+        text-align: center;
+        padding: 0;
+        border: inset 2px lightblue;
+    }
+
+    #interests-page{
+        display: block;
+        height: 260vh;
+    }
+
+    #articles{
+        width: 100%;
+        height: 40%;
+    }
+
+    #article-links{
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+    }
+
+    #myInterests{
+        width: 100%;
+        padding: 0;
+        height: 140%;
+        top: 0%;
+
+    }
+
+    #myInterests p{
+       top: 5%;
+       padding: 2px;
+       font-size: 14px;
+    }
+
+    
+    #myInterests h3{
+        top: 5%;
+     }
+
+    #git-div{
+        height: 220vh;
+        font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    
+    #youtube-vids{
+        display: block;
+        height: 200vh;
+        width: 100%;
+        left: 5%;
+        padding-left:5%;
+    }
+
+    #contact-page{
+        height: 60vh;
+    }
+
+    #youtube-vids iframe{
+        width:auto;
+        height:auto;
+        
+ 
+    }
+}
 
 
-
-@media screen and (orientation:portrait) and (max-width:376px)
+@media screen and (orientation:portrait) and (min-width:361px) and (max-width:376px)
 {
     .navigation_bar{
         display: none;
