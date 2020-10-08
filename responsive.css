@@ -1,7 +1,7 @@
 
 
 
-@media only screen and (max-width:376px)
+@media  screen and (max-width:376px)
 {
     .navigation_bar{
         display: none;
@@ -139,11 +139,13 @@
     #youtube-vids{
         display: block;
         height: 200vh;
-        position: relative;
         width: auto;
-        left: 0%;
-       padding-left: 0%;
+        position: relative;
+        
+        
     }
+
+    
 
     #contact-page{
         height: 60vh;
@@ -152,7 +154,7 @@
     #youtube-vids iframe{
         width:auto;
         height:auto;
-        
+       
  
     }
 
@@ -768,4 +770,27 @@
     }
     
 }
+
+
+@media screen and (orientation:landscape) and (max-width:1024px)
+{
+
+    .navigation_bar{
+        display: none;
+    }
+
+    #youtube-vids{
+        display: block;
+        height: 30vh;
+        width: auto;
+        padding: 90px;
+    }
+
+    #youtube-vids iframe{
+        width:200px;
+        height:auto;
+ 
+    }
+}
+
 
