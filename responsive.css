@@ -140,12 +140,9 @@
         display: block;
         height: 200vh;
         width: auto;
-        position: relative;
-        
-        
+        left: 0%;
+        padding-left: 0%;
     }
-
-    
 
     #contact-page{
         height: 60vh;
@@ -154,7 +151,7 @@
     #youtube-vids iframe{
         width:auto;
         height:auto;
-       
+        
  
     }
 
@@ -772,7 +769,7 @@
 }
 
 
-@media screen and (orientation:landscape) and (max-width:1024px)
+@media screen and (orientation:landscape) and (min-width:735px) and (max-width:1024px)
 {
 
     .navigation_bar{
@@ -791,6 +788,171 @@
         height:auto;
  
     }
+}
+
+
+@media screen and (orientation:landscape) and (max-width:735px)
+{
+    .navigation_bar{
+        display: none;
+    }
+
+    #home-page{
+        height: 200vh;
+    }
+
+    #home{
+        display: block;
+        height: 100%;
+    }
+
+    #left{
+        width: 100%;
+        height: 60vh;
+    }
+
+    #image-holder{
+        top: 5%;
+        height: 97%;
+        width: 90%;
+    }
+
+    #right{
+        padding-top: 5%;
+        width: 100%;
+        height: 30vh;
+       
+        margin: 0;
+    }
+
+    #about{
+        top: 10%;
+        padding:5px;
+    }
+
+    
+
+    #more{
+        padding: 5px;
+        top: 0;
+        text-align: center;
+        font-weight: 100;
+        font-family: sans-serif;
+        font-size: 20px;
+    }
+
+    #right p{
+        
+        text-align: center;
+        font-weight: 100;
+        font-family: sans-serif;
+        font-size: 13.5px;
+    }
+
+    #about-page{
+        padding: 0;
+        height: 60vh;
+    }
+
+    #about-page p{
+        padding: 10px;
+        margin: 0;
+        position: relative;
+        top: 3%;
+        left: 10%;
+        width: 80%;
+        font-weight: 100;
+        font-family: sans-serif;
+        font-size: 18px;
+    }
+
+    #skills-page{
+        height: 340vh;
+    }
+
+    #skill-card{
+        display: block;
+        top: 1%;
+      
+    }
+
+    .card{
+        top:0;
+        width: 80%;
+        height: 90%;
+        position: relative;
+        left: 10%;
+    }
+
+
+    .preview
+    {
+        width: 95%;
+    }
+    .experience{
+        width: 95%;
+        height: 50%;
+        background-color: rgba(255, 225, 255, 0.2);
+        margin: 12px;
+        text-align: center;
+        padding: 0;
+        border: inset 2px lightblue;
+    }
+
+    #interests-page{
+        display: block;
+        height: 120vh;
+    }
+
+    #articles{
+        width: 100%;
+        height: 40%;
+    }
+
+    #article-links{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    #myInterests{
+        width: 100%;
+        padding: 0;
+        height: 50%;
+    }
+
+    #myInterests p{
+       top: 5%;
+       padding: 5px;
+    }
+
+    
+    #myInterests h3{
+        top: 5%;
+     }
+
+    #git-div{
+        height: 110vh;
+    }
+
+    #youtube-vids{
+        display: block;
+        height: 30vh;
+        position: relative;
+        width: 100%;
+        padding: 90px;
+    }
+
+    #contact-page{
+        height: 60vh;
+    }
+
+    #youtube-vids iframe{
+        width:auto;
+        height:auto;
+ 
+    }
+    
 }
 
 
