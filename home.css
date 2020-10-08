@@ -380,7 +380,7 @@ html, body{
     display: flex;
     top: 20%;
     align-content: center;
-    
+    position: relative;
     background-image: url(brick-wallpaper-dark-background.jpg);
 }
 
