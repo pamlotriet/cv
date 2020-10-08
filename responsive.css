@@ -51,6 +51,7 @@
         font-family: Arial, Helvetica, sans-serif;
         font-size: 10px;
         padding-left: 10%;
+        left: 10%
         
     }
     
@@ -145,8 +146,8 @@
         display: block;
         height: 200vh;
         width: 100%;
-        left: 2.5%;
-        padding-left:2.5%;
+        left: 5%;
+        padding-left:5%;
     }
 
     #contact-page{
